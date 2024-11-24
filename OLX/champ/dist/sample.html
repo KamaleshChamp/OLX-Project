@@ -1,0 +1,30 @@
+<script >
+          $("form").submit(function(e){
+                 e.preventDefault();
+
+                 $.POST(
+                  'Contact.php',
+                  {
+                     firstname: $("#fname").val(),
+                     lastname: $("#lname").val(),
+                     city: $("#city").val(),
+                     pincode: $("#pincode").val(),
+                     prodectprice: $("#Pprice").val(),
+                     prodectname: $("#Pname").val(),
+                     email: $("#email").val(),
+                     phone: $("#phone").val(),
+                     message: $("#prodes").val()
+
+                  },
+                  function(result){
+                    if(result=="success"){
+                         $("result").html("values inserted success") 
+                    } else
+                         $("result").html("values Error") 
+                  } 
+               );
+
+          });
+
+
+        </script>

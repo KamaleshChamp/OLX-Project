@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<te>
+<price-trends>
+<property>Laptop</property>
+<price-range>Rs.25,000 to 80,000</price-range>
+<customer> 102 </customer>
+</price-trends>
+
+<price-trends>
+<property>Bike </property>
+<price-range>Rs.30,000 to 1 lakh</price-range>
+<customer> 207 </customer>
+</price-trends>
+
+<price-trends>
+<property>car </property>
+<price-range>Rs.1.5 lakh to 15 lakh</price-range>
+<customer> 87</customer>
+</price-trends>
+
+<price-trends>
+<property>phone</property>
+<price-range>Rs.5000 to 3000</price-range>
+<customer>300</customer>
+</price-trends>
+
+<price-trends>
+<property>cycle</property>
+<price-range>Rs.5000 to 15,000</price-range>
+<customer> 98 </customer>
+</price-trends>
+
+<price-trends>
+<property>frige</property>
+<price-range>Rs.Rs.8000 to 25,000</price-range>
+<customer>102</customer>
+</price-trends>
+
+
+
+<price-trends>
+<property>table</property>
+<price-range>Rs.3000 to 8,000t</price-range>
+<customer> 201</customer>
+</price-trends>
+
+<price-trends>
+<property>box</property>
+<price-range>Rs.1000 to 2000</price-range>
+<customer>532</customer>
+</price-trends>
+
+<price-trends>
+<property>Fan </property>
+<price-range>Rs.3000 to 10,000</price-range>
+<customer> 104 </customer>
+</price-trends>
+
+
+
+<price-trends>
+<property>charge </property>
+<price-range>Rs.1000 to 5000</price-range>
+<customer> 312 </customer>
+</price-trends>
+
+<price-trends>
+<property>Power bank</property>
+<price-range>Rs.2000 to 10,000</price-range>
+<customer> 97</customer>
+</price-trends>
+
+<price-trends>
+<property>light </property>
+<price-range>Rs.1000 to 2000t</price-range>
+<customer>53 </customer>
+</price-trends>
+
+<price-trends>
+<property> speaker</property>
+<price-range>Rs.5000 to 12,000</price-range>
+<customer> 123</customer>
+</price-trends>
+
+
+
+</te>

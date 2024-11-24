@@ -1,0 +1,110 @@
+.main {
+   background: linear-gradient(to bottom, #003366 15%, #ffffff 118%);
+  
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main ul {
+  width: 50%;
+}
+
+ul {
+  list-style: none;
+  border: 1px solid #1b1919;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #5677fc;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+li {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+li:last-child {
+  border-bottom: none;
+}
+
+li {
+  position: relative;
+  z-index: 1;
+}
+
+li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: auto;
+  background: #5677fc;
+  z-index: -1;
+  transition: width 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+li:hover:after {
+  width: 100%;
+}
+
+li:hover a {
+  color: #fff;
+}
+li:hover span i {
+  margin-right: 20px;
+  opacity: 1;
+}
+
+li span i {
+  float: right;
+  transition: margin-right 0.7s, opacity 0.7s;
+  opacity: 0;
+  color: white;
+}
+
+li .json-data {
+  /*transition: all .5s ease;*/
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0px 0px;
+  color: white;
+}
+li .json-data .subscribers {
+  margin-top: 10px;
+}
+li .json-data .sub-desc {
+  line-height: 1.5;
+}
+
+/*li:hover {
+  .json-data {
+    height: auto; 
+    opacity: 1.0;
+    overflow: visible;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}*/
+.json-data.show {
+  transition: all 0.5s;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.json-data.jumper {
+  transition: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>champ</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+
+<script type="text/javascript">
+  function ajaxfun(){
+
+var ajax = new XMLHttpRequest();
+ajax.onreadystatechange= function()
+{
+  if(this.readyState==4 && this.status==200)
+  {
+    //alert(this.responseText);
+    document.getElementById("mes").innerHTML()=this.responseText;
+  }
+};
+
+ajax.open("POST","test.txt",true);
+ajax.send();
+  }
+</script>
+
+
+</head>
+
+<button onclick="ajaxfun()" >ajax</button>
+<div id="mes">
+  
+</div>
+</body>
+</html>

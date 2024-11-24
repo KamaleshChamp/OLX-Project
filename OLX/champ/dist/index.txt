@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-Olx_contact</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'><link rel="stylesheet" href="./style_con.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>      
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2">
+
+        <h1>Welcome You to This Mini Olx</h1>
+
+        <p class="lead">Send Your Details to Admin to post any of Your product  </p>
+
+        <p>Your respective details send to Admin and where Admin verified your details and he contact youb back for some  queries </p>
+        <p>Thanks for Visting</p>
+
+        
+
+        <div class="messages"></div>
+
+        <div class="controls">
+<form id="contact-form" method='post' action='contactt.php' role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_name">Firstname *</label>
+                <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_lastname">Lastname *</label>
+                <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_name">City *</label>
+                <input id="form_name" type="text" name="city" class="form-control" placeholder="Please enter your city *" required="required" data-error="Firstname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_lastname">PinCode *</label>
+                <input id="form_lastname" type="text" name="pincode" class="form-control" placeholder="Please enter your pinicode *" required="required" data-error="Lastname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_message">Product Price *</label>
+                <input id="form_message"  name="prodectprice" class="form-control" placeholder="Please enter your price *" required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_phone">Product Name*</label>
+                <input id="form_phone" type="text" name="prodectname" class="form-control" placeholder="Please enter your name">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_email">Email *</label>
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_phone">Phone</label>
+                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="form_message">Product Description*</label>
+                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+             </form>
+       
+      
+
+
+        </script>
+
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-muted"><strong>*</strong>
+            </div>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<!-- partial -->
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js'></script><script  src="./script_con.js"></script>
+
+</body>
+</html>

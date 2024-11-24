@@ -1,0 +1,88 @@
+:root {
+
+/* COLORS */
+--accent: #c0b194;
+--accentrgb: 194 177 148;
+
+--lighttext: #fafafa;
+--midtext: #c0c0c0;
+--darktext: #3f3957;
+
+--lightbg: 240 240 240;
+--midbg: 140 140 140;
+--darkbg: 24 24 24;
+
+--border: 240 240 240;
+
+/* IMAGES */
+--bg: url('https://i.imgur.com/pLEYyVd.jpg');
+--avbg: url('https://i.imgur.com/rULNZSL.png');
+--accentbg: url('https://i.imgur.com/MW9Gz7P.jpg'); 
+--placeholderbg: url('https://files.jcink.net/uploads2/konskins/newproj003.jpg');
+
+/* FONTS */
+--body: arimo;
+--bodyfont: istok web, arimo, Arial, sans-serif;
+--displayfont: voyage;
+--titlefont: playfair display;
+--monofont: ibm plex mono;
+--serifdisplay: old standard tt; 
+--seriffont: EB Garamond, serif; 
+--sansfont: work sans; 
+--smallfont: Josefin Sans;
+
+
+/* FONT SIZES */
+--fontxxxxl: 15px;
+--fontxxxl: 14px;
+--fontxxl: 13px;
+--fontxl: 12px; 
+--fontl: 11px; 
+--fontm: 10px;
+--fonts: 9px;
+--fontxs: 8px;
+--fontxxs: 7px;
+
+/* MARGINS & PADDING */
+--framewidth: 32px;
+--pad: 25px;
+}
+
+
+
+/****************************************
+ Body Background & Text Style
+*****************************************/
+
+html { overflow-x: hidden;  scroll-behavior: smooth; position: relative;}
+html::before {content: ''; display: block; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -10; background: linear-gradient(rgba(var(--darkbg) / 30%) 100%,rgba(145,167,208,.0)), var(--bg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+
+
+body {font-family: var(--bodyfont); font-size: var(--fontl); letter-spacing: .5px; margin: 0px; padding:0px;  color: var(--lighttext); -webkit-text-size-adjust: none;  background-color: #000000; position: relative; }
+
+
+
+/* BITS & BOBS */
+
+form { display:inline; }
+
+*, *::before, *::after {ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/****************************************
+   Link colors
+*****************************************/
+
+a:link, a:visited, a:active, a:hover {  text-decoration: none; color: var(--lighttext);}
+
+
+#redirect-screen > table {height: 100vh; display: flex; align-items: center; justify-content: center;}
+#redirect-screen .tablefill {position: relative; text-transform: uppercase; font-family: ; letter-spacing: 2px; font-size: var(--fontl); z-index: 0}
+#redirect-screen tbody {padding: 50px; display: block; margin: auto; width: max-content}
+#redirect-screen .tablefill tbody:first-of-type::before {z-index: -1; content:""; position: absolute; border: 1px solid rgba(var(--border) / 35%); border-top: 0px; border-bottom: 0px;  height: calc(100% - (var(--pad) * 2)); width: 100%; top: var(--pad); left: 0px}
+#redirect-screen .tablefill tbody:first-of-type::after {z-index: -1; content:""; position: absolute; border: 1px solid rgba(var(--border) / 35%); border-right: 0px; border-left: 0px;  height: 100%; width: calc(100% - (var(--pad) * 2)); top: 0px; left: var(--pad)}
+#redirect-screen tbody tr {display: block}
+#redirect-screen .tablefill tbody:first-of-type tr:first-of-type::before {z-index: -1; content:""; position: absolute; border: 1px solid rgba(var(--border) / 35%); border-top: 0px; border-left: 0px; width: var(--pad); height: var(--pad); border-radius: 0px 0px 100% 0px; top: 0px; left: 0px; }
+#redirect-screen .tablefill tbody:first-of-type tr:first-of-type::after {z-index: -1; content:""; position: absolute; border: 1px solid rgba(var(--border) / 35%); border-top: 0px; border-right: 0px; width: var(--pad); height: var(--pad); border-radius: 0px 0px 0px 100%; top: 0px; right: 0px;}
+#redirect-screen tbody tr td {display: block}
+#redirect-screen .tablefill tbody:first-of-type tr:first-of-type td:first-of-type::before {z-index: -1; content:""; position: absolute; border: 1px solid rgba(var(--border) / 35%); border-bottom: 0px; border-left: 0px; width: var(--pad); height: var(--pad); border-radius: 0px 100% 0px 0px; bottom: 0px; left: 0px}
+#redirect-screen .tablefill tbody:first-of-type tr:first-of-type td:first-of-type::after {z-index: -1; content:""; position: absolute; border: 1px solid rgba(var(--border) / 35%); border-bottom: 0px; border-right: 0px; width: var(--pad); height: var(--pad); border-radius: 100% 0px 0px 0px; bottom: 0px; right: 0px}
